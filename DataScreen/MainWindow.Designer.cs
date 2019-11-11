@@ -39,14 +39,16 @@
             this.labelTitle.Size = new System.Drawing.Size(73, 13);
             this.labelTitle.TabIndex = 0;
             this.labelTitle.Text = "Project Status";
+            this.labelTitle.Click += new System.EventHandler(this.labelTitle_Click);
             // 
-            // Form1
+            // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(115)))), ((int)(((byte)(172)))));
             this.ClientSize = new System.Drawing.Size(906, 613);
             this.Controls.Add(this.labelTitle);
-            this.Name = "Form1";
+            this.Name = "MainWindow";
             this.Text = "Hello World";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
